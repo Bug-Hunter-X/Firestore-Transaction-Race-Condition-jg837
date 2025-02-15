@@ -1,0 +1,1 @@
+In a Firebase project, I encountered an issue where data wasn't being written to Firestore correctly. The problem stemmed from an asynchronous operation within a transaction that wasn't properly handled. Specifically, the `get()` call inside the transaction wasn't awaited, which led to race conditions and inconsistent data updates.
